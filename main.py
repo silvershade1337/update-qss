@@ -21,4 +21,7 @@ def updateStyleSheet(stylable, style: str):
     stylable.setStyleSheet(re.sub(f"{prop} *: *[^;\n]*;?", f"{prop}: {val};", s))
     print(stylable.styleSheet(), end="\n")
 
+def behappy():
+    print("habibi")
+
 updateStyleSheet(st(), "font-weight: 40px;")
